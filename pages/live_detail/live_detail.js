@@ -50,8 +50,6 @@ Page({
                 wx.setNavigationBarTitle({
                     title: res.data.t1_name + " VS " + res.data.t2_name //页面标题为路由参数
                 })
-
-
             })
             .catch(e => {
                 console.error(e)

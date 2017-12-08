@@ -11,7 +11,7 @@
     <view class='date-item icon-next' data-time="{{list.next_date}}" bindtap='selectDate'> </view>
 </view>
 <view wx:if="{{list.list}}">
-    <view class="live_item" wx:for="{{list.list}}" wx:for-item="list">
+    <view class="live_item" wx:for="{{list.list}}" wx:for-item="list" wx:key="list.liveid">
         <navigator url="/pages/live_detail/live_detail?liveid={{list.liveid}}&schid={{list.schid}}">
             <view class="team">
                 <image src="{{list.visitteamlogo}}" class="team-logo"></image>

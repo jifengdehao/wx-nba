@@ -16,6 +16,7 @@ Page({
         };
         app.api.nab_schedule(params)
             .then(res => {
+                console.log(res)
                 that.setData({
                     list: res.data.data
                 });
